@@ -22,7 +22,7 @@ let overpay;
 let kAut;
 let All;
 
-kAut = to2(mRate + (mRate/((Math.pow(1 + mRate, term)) -1)));
+kAut = mRate + (mRate/((Math.pow(1 + mRate, term)) -1));
 mSum = to2(sumK * kAut);
 console.log(mSum);
 All = mSum * term;
